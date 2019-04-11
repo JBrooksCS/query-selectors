@@ -11,9 +11,14 @@ firstSection.textContent = "Welcome to the Jason blog";
 var elems = document.querySelectorAll(".article__header");
 var index=0; length = elems.length;
 for ( ; index<length; index++){
-    elems[index].classList = "article__header !important";
+    elems[index].classList= "article__header !important";
 }
-
+//alternatively
+ elems.forEach(x => {
+    x.classList.add("alternative_example");
+})
+//
+//
 
 //Obtain a reference the element with a class of dashed and remove it.
 
